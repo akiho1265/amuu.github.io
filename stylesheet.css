@@ -1,9 +1,214 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+header{
+    height: 85px;
+    width:100%;
+    background-color:#EAD9FF;
+    color:slateblue;
+    opacity:0.8;
+    position:fixed;
+    top: 0;
+    z-index:10;
+}
+footer{
+  height: 120px;
+  width:100%;
+  background-color:#f9d9ff;
+  color:slateblue;
+}
+.header-logo{
+    padding:20px 60px;
+    font-size:45px;
+    font-family:cursive;
+}
+.header-menu{
+   float:right;
+   margin-top: -60px;
+   margin-right:80px
+}
+.header-menu a{
+  padding:20px;
+}
+.top-wrapper{
+  height:650px;
+  opacity:0.7;
+  background-image:url("https://imgs.marry-xoxo.com/uploads/image/file/189625/compressed_173b2e3a-1009-4589-94cc-f86c4c1c8606.jpg");
+  background-size:cover;
+}
+.top-title{
+  padding:200px;
+  color:black;
+  text-align:center;
+  letter-spacing: 3px;
+}
+.top-title h2{
+ color:coral;
+}
+
+/*スライド*/
+.portforio-wrapper{
+  background-image:url("https://imgs.marry-xoxo.com/uploads/image/file/189628/compressed_7e424b96-0632-4881-903f-bfceb6f0eaee.jpg");
+  background-size:cover;
+}
+.slide-wrapper {
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+  color:black;
+  padding: 50px 0;
+}
+
+.slide-title {
+  font-size: 30px;
+  margin-top:60px;
+  margin-bottom: 30px;
+}
+
+.change-btn-wrapper {
+  width: 550px;
+  margin: 15px auto;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.change-btn-wrapper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.prev-btn {
+  font-size:18px;
+  cursor: pointer;
+  float: left;
+  display: none;
+  
+}
+
+.next-btn {
+  font-size:18px;
+  cursor: pointer;
+  float: right;
+}
+
+.slides {
+  padding: 0;
+}
+
+.slide {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.slide img {
+  border:#5cabd0 solid 4px;
+  width: 600px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.index-btn-wrapper {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.index-btn {
+  display: inline-block;
+  color: #4e90af;
+  background-color: #e0f5ff;
+  width: 50px;
+  padding: 10px 0;
+  margin: 0 20px;
+  border:#5cabd0 solid 4px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.index-btn:hover {
+  color: #fff;
+  background-color: #5cabd0;
+}
+
+/*アコーディオン*/
+.profiel-wrapper{
+  height:600px;
+}
+.profiel-wrapper h2{
+  padding-top:100px;
+  padding-bottom:30px;
+  font-size:30px;
+  text-align:center;
+}
+.profiel-wrapper p{
+  padding-top:20px;
+  font-size:20px;
+  text-align:center;
+}
+.faq-list-item {
+  margin:30px;
+  padding-left:80px;
+  border-bottom:1px solid #ccc;
+  position:relative;
+  cursor:pointer;
+  text-align: left;
+  list-style:none;
+}
+
+.faq-list-item h3 {
+  font-size: 20px;
+}
+
+.faq-list-item span {
+  position:absolute;
+  top:0;
+  right:20px;
+  color:#ccc;
+  font-size:20px;
+}
+
 .answer {
   font-size: 20px;
   padding: 20px 0px;
   margin-bottom: 20px;
   display:none;
 } 
+
+/*メール*/
+input{
+  width:50%;
+  padding:20px;
+}
+.form-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size:25px;
+}
+.form-item {
+  padding: 20px 0 10px 0;
+  font-weight: bold;
+}
+.thanks-message {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 25px;
+  color:cornflowerblue;
+}
+.display-contact {
+  width: 65%;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #F5F5F5;
+  color: #333;
+}
 
 /*セレクトボックス*/
 .section-title h3{
@@ -97,3 +302,4 @@
   margin-top:10px;
   margin-bottom:100px;
 }
+
