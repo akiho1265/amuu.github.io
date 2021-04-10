@@ -94,10 +94,14 @@
       <h3>📩お仕事依頼・お問合せ</h3>  
     </div>
     <div class="section-content">
-      <form  id="form" class="form">
+      <form method="post" action="mail.php" id="form" class="form">
         <div class="form-group">
+          <p>お名前を入力してください</p>
+          <input type="text" name="name">
+          <p>ご連絡先を入力してください（TEL📞 or Mailadress📩）</p>
+          <input type="text" name="mail">
           <div>お問合せ内容：</div>
-          <select id="select-form" class="select-form">
+          <select name="category" id="select-form" class="select-form">
             <option value="0">選択してください</option>
             <option value="1">1. お仕事依頼</option>
             <option value="2">2. ご質問・お問合せ</option>
@@ -106,16 +110,24 @@
         </div>
         <div class="form-group">
           <p>具体的な内容：</p>
-          <textarea id="text-form" class="text-form"></textarea>  
+          <textarea id="text-form" class="text-form" name="body"></textarea>  
         </div>
         <button type="submit" class="btn btn-submit">送信</button>
       </form>
 </div>
 
  <footer>
-
+  <div class="header-logo">thank you for comming</div>
+    <div class="header-menu">
+    <a href="#profiel" class="message">🌸プロフィール</a>
+     <a href="#portforio" class="portforio">📚portforio</a>
+     <a href="#message" class="message">📩お仕事依頼・お問合せ</a>
+   </div>
+  </div>
  </footer>
   <script src="script.js"></script> 
 </body>
 
 </html>
+
+
